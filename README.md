@@ -5,9 +5,7 @@ Based on angular-js 1.3.x.
 
 Use it like this;
 
- <cite>
-<carousel images="images"></carousel>
- </cite>
+carousel images="images" /carousel
 
 scope.images = new Array();
 
