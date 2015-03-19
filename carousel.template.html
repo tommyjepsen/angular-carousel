@@ -3,7 +3,7 @@
 	<button class="carousel-button left text-white" id="prev" ng-click="prev()" ng-if="multipleImages" ng-show="prevStatus"><i class="icon icon-arrowleft"></i></button>
 	<button class="carousel-button right text-white" id="next" ng-click="next()" ng-if="multipleImages" ng-show="nextStatus"><i class="icon icon-arrowright"></i></button>
 
-	<image-preloader ng-if="imageStatus" source="{{igimage}}" id="image-carousel-img"></image-preloader>
+	<img ng-if="imageStatus" ng-src="{{igimage}}" id="image-carousel-img" />
 
 	<div class="carousel-container">
 		<button class="carousel-circle"
