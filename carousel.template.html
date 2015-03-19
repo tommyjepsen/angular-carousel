@@ -1,0 +1,20 @@
+<div class="image-carousel">
+
+	<button class="carousel-button left text-white" id="prev" ng-click="prev()" ng-if="multipleImages" ng-show="prevStatus"><i class="icon icon-arrowleft"></i></button>
+	<button class="carousel-button right text-white" id="next" ng-click="next()" ng-if="multipleImages" ng-show="nextStatus"><i class="icon icon-arrowright"></i></button>
+
+	<image-preloader ng-if="imageStatus" source="{{igimage}}" id="image-carousel-img"></image-preloader>
+
+	<div class="carousel-container">
+		<button class="carousel-circle"
+				ng-repeat="data in images track by $index"
+				ng-click="clickImage($index)"
+			ng-class="{'selected-circle': currentIndex == $index}">
+			&#x25CF;
+		</button>
+	</div>
+
+	<div class="no-preview" ng-if="!imageStatus">
+		<h4>No image to show</h4>
+	</div>
+</div>
