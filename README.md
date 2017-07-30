@@ -15,3 +15,4 @@ scope.images = [
 1: "image.png",
 2: "image.png"];
 
+Developed at [freelance digital studio Tons](https://tonsstudio.com) by me [freelancer mobile app developer, webdesigner and UI/UX designer Tommy Jepsen](https://tommyjepsen.com)
